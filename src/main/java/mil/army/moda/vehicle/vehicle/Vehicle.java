@@ -9,20 +9,19 @@ public class Vehicle {
     @Id
     @GeneratedValue
     private Long id;
-
     private String make;
     private String model;
-    private int year;
-    private int milage;
+    private Integer vecYear;
+    private Integer milage;
 
     public void setId(Long id) {
         this.id = id;
     }
 
-    public Vehicle(String make, String model, int year, int milage) {
+    public Vehicle(String make, String model, int vecYear, int milage) {
         this.make = make;
         this.model = model;
-        this.year = year;
+        this.vecYear = vecYear;
         this.milage = milage;
     }
 
@@ -38,8 +37,8 @@ public class Vehicle {
         this.model = model;
     }
 
-    public void setYear(int year) {
-        this.year = year;
+    public void setVecYear(int year) {
+        this.vecYear = year;
     }
 
     public void setMilage(int milage) {
@@ -58,8 +57,8 @@ public class Vehicle {
         return model;
     }
 
-    public int getYear() {
-        return year;
+    public int getVecYear() {
+        return vecYear;
     }
 
     public int getMilage() {

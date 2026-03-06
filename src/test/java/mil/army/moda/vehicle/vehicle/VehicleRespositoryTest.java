@@ -28,7 +28,7 @@ class VehicleRepositoryTest {
         //Assert
         assertThat(retrievedVehicle.get().getMake()).isEqualTo("Sopwith");
         assertEquals("dog-1", retrievedVehicle.get().getModel());
-        assertEquals(1975, retrievedVehicle.get().getYear());
+        assertEquals(1975, retrievedVehicle.get().getVecYear());
         assertEquals(0, retrievedVehicle.get().getMilage());
         assertThat(retrievedVehicle.get()).isEqualTo(doghouse);
     }

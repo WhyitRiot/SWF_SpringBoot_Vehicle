@@ -29,7 +29,7 @@ class VehicleServiceTest {
     @Test
     void shouldGetBook(){
         Vehicle doghouse = new Vehicle("Sopwith", "dog-1", 1975, 0);
-        doghouse.setId(1l);
+        doghouse.setId(1L);
         when(repository.save(doghouse)).thenReturn(doghouse);
         when(repository.getReferenceById(doghouse.getId())).thenReturn(doghouse);
         Vehicle savedVehicle = repository.save(doghouse);
